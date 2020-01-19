@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Lato Regular';
-  src: url("Lato-Regular.eot");
-  src: url("Lato-Regular.eot?#iefix") format("embedded-opentype"), url("Lato-Regular.woff") format("woff"), url("Lato-Regular.ttf") format("truetype");
+  src: url("/fonts/Lato-Regular.eot");
+  src: url("/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Regular.woff") format("woff"), url("/fonts/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato Bold';
-  src: url("Lato-Bold.eot");
-  src: url("Lato-Bold.eot?#iefix") format("embedded-opentype"), url("Lato-Bold.woff") format("woff"), url("Lato-Bold.ttf") format("truetype");
+  src: url("/fonts/Lato-Bold.eot");
+  src: url("/fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Bold.woff") format("woff"), url("/fonts/Lato-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,6 +17,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Lato Regular';
 }
 
 html {
@@ -26,5 +27,60 @@ html {
 .container {
   max-width: 940px;
   margin: 0 auto;
+}
+
+.header {
+  background: url(/img/bg-header.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.contacts__logo {
+  color: #5a5a5a;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contacts__communication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__communication .tel {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contacts__communication .feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #d91233;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
