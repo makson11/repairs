@@ -45,7 +45,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .contacts__logo {
