@@ -1,27 +1,53 @@
 .header
-    background: url(/img/bg-header.png) no-repeat
+    background: url(/img/bg-header.png) no-repeat center
     background-size: cover
-    height: 100vh
 
 .contacts
     display: flex
     align-items: center
     justify-content: space-between
     padding-top: 2rem
-    .logo
+    margin-bottom: 9.4rem
+    &__logo
         color: #5a5a5a
         font-size: 3rem
         text-transform: uppercase
         text-decoration: none
-    .communication
+    &__communication
         display: flex
         flex-direction: column
-        .tel
+    &__tel
+        color: $white
+        font-size: 2.8rem
+        font-weight: 700
+        text-decoration: none
+    &__feedback
+        color: $btn-color
+        font-size: 1.6rem
+        text-align: right
+
+.main
+    text-align: center
+    .title
+        color: $white
+        font-size: 4.8rem
+        font-weight: 700
+        text-transform: uppercase
+    .subtitle
+        color: $white
+        font-size: 3rem
+        padding: 3rem 0
+        margin-bottom: 7.1rem
+
+    .services
+        display: flex
+        justify-content: space-around
+        &__icon
+            padding: 3.6rem
+            max-height: 100%
+        &__text
+            text-align: center
             color: $white
-            font-size: 2.8rem
-            font-weight: 700
-            text-decoration: none
-        .feedback
-            color: $btn-color
-            font-size: 1.6rem
-            text-align: right
+            font-size: 1.8rem
+        .icon
+            padding-bottom: 1.9rem
