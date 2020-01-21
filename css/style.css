@@ -119,9 +119,43 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #ffffff;
   font-size: 1.8rem;
+  margin-bottom: 10rem;
 }
 
 .main .services .icon {
-  padding-bottom: 1.9rem;
+  padding-top: 2rem;
+}
+
+.main .request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 8.7rem;
+}
+
+.main .request .btn {
+  background-color: rgba(217, 18, 51, 0);
+  border: 2px solid #d91233;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1.7rem 5.6rem;
+  margin: 2rem;
+}
+
+.main .request__text {
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-align: cetnter;
+  margin: 0 auto;
+  width: 160px;
+}
+
+.main .request .active {
+  background-color: #d91233;
 }
 /*# sourceMappingURL=style.css.map */
