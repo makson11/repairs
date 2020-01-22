@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header__nav">
@@ -28,7 +30,8 @@
 
                     <div class="services">
                         <div class="services__block">
-                            <img src="img/icons/delivery.png" alt="Доставка по РФ от 3-х дней" class="services__icon icon">
+                            <img src="img/icons/delivery.png" alt="Доставка по РФ от 3-х дней"
+                                class="services__icon icon">
                             <p class="services__text">Доставка по РФ<br> от 3-х дней</p>
                         </div>
                         <div class="services__block">
@@ -40,7 +43,7 @@
                         <div class="services__block">
                             <img src="img/icons/list.png" alt="Наличие более 500 
                             различных деталей" class="services__icon icon">
-                            <p class="services__text">Наличие более 500<br> 
+                            <p class="services__text">Наличие более 500<br>
                                 различных деталей</p>
                         </div>
                     </div>
@@ -49,7 +52,7 @@
                     <div class="request">
                         <div class="request__block">
                             <button class="btn active">Быстрая заявка</button>
-                            <p class="request__text">Мы перезвоним Вам 
+                            <p class="request__text">Мы перезвоним Вам
                                 для уточнения деталей.</p>
                         </div>
                         <div class="request__block">
@@ -78,7 +81,8 @@
                 <div class="about-us__item">
                     <img src="img/icons/auto.png" alt="Доставка в любой регион РФ" class="about-us__icon">
                     <h3 class="about-us__title">Доставка в любой регион РФ</h3>
-                    <p class="about-us__text">Мы работаем с любой транспортной компанией и осуществляем доставку в любой регион РФ</p>
+                    <p class="about-us__text">Мы работаем с любой транспортной компанией и осуществляем доставку в любой
+                        регион РФ</p>
                 </div>
                 <div class="about-us__item">
                     <img src="img/icons/new.png" alt="Новое состояние деталей" class="about-us__icon">
@@ -88,12 +92,14 @@
                 <div class="about-us__item">
                     <img src="img/icons/quality.png" alt="Европейское качество" class="about-us__icon">
                     <h3 class="about-us__title">Европейское качество</h3>
-                    <p class="about-us__text">Все наши детали привезены из Европы, что гарантирует отличное качество.</p>
+                    <p class="about-us__text">Все наши детали привезены из Европы, что гарантирует отличное качество.
+                    </p>
                 </div>
                 <div class="about-us__item">
                     <img src="img/icons/blank.png" alt="Работаем по договору" class="about-us__icon">
                     <h3 class="about-us__title">Работаем по договору</h3>
-                    <p class="about-us__text">Все, что мы делаем - официально. Мы заключаем договор купли-продажи и предоставляем все необходимые документы.</p>
+                    <p class="about-us__text">Все, что мы делаем - официально. Мы заключаем договор купли-продажи и
+                        предоставляем все необходимые документы.</p>
                 </div>
             </div>
             <!-- /.about-us__wrapper -->
@@ -101,5 +107,82 @@
         <!-- /.container -->
     </section>
     <!-- /.about-us-->
+
+    <secion class="detailed-request">
+        <div class="container">
+            <div class="detailed-request__wrapper">
+                <h2 class="detailed-request__title">Подробная заявка</h2>
+                <!-- /.detailed-request -->
+
+                <p class="detailed-request__subtitle">Заполните форму и получите максимально точную цену!</p>
+                <!-- /.detailed-request__subtitle -->
+
+                <form action="#" class="detailed-request__form">
+                    <div class="auto">
+                        <p>Марка:
+                            <select name="#" id="mark">
+                                <option selected disabled>Выберите марку</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Mini">Mini</option>
+                            </select>
+                        </p>
+
+                        <p>Модель:
+                            <select name="#" id="mark">
+                                <option selected disabled>Выберите модель</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Mini">Mini</option>
+                            </select>
+                        </p>
+
+                        <p>Год впуска:
+                            <select name="#" id="mark">
+                                <option selected disabled>Выберите год</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Mini">Mini</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="details">
+                        <p>Необходимые детали:
+                            <textarea name="#" id="details" cols="30" rows="10" placeholder="Введите"></textarea>
+                        </p>
+
+                        <div>
+                            <label for="name">Введите имя:</label>
+                            <input type="text" placeholder="Введите" id="name">
+                        </div>
+                    </div>
+
+                    <div class="contacts">
+                        <div>
+                            <label for="phone">Ваш телефону:</label>
+                            <input type="tel" id="phone" pattern="+7 (9[0-9]{2}) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                placeholder="+7 (9__) ___-__-__">
+                        </div>
+
+                        <div>
+                            <label for="email">Ваш емайл:</label>
+                            <input type="email" id="email">
+                        </div>
+                        <button class="btn active">Узнать цену</button>
+                    </div>
+
+                </form>
+                <!-- /.detailed-request__form -->
+            </div>
+            <!-- /.detailed-request__wrapper -->
+        </div>
+        <!-- /.container -->
+    </secion>
+    <!-- /.detailed-request -->
 </body>
+
 </html>

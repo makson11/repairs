@@ -35,6 +35,21 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.btn {
+  background-color: rgba(217, 18, 51, 0);
+  border: 2px solid #d91233;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.8em;
+  padding: .945em 3.111em;
+  margin: 2rem;
+}
+
+.active {
+  background-color: #d91233;
+}
+
 .header {
   background: url(/img/bg-header.png) no-repeat center;
   background-size: cover;
@@ -139,27 +154,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 8.7rem;
 }
 
-.main .request .btn {
-  background-color: rgba(217, 18, 51, 0);
-  border: 2px solid #d91233;
-  border-radius: 50px;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 1.8em;
-  padding: .944em 3.11em;
-  margin: 2rem;
-}
-
 .main .request__text {
   color: #ffffff;
   font-size: 1.4rem;
   text-align: cetnter;
   margin: 0 auto;
   width: 160px;
-}
-
-.main .request .active {
-  background-color: #d91233;
 }
 
 .about-us {
@@ -196,5 +196,41 @@ h1, h2, h3, h4, h5, h6 {
 .about-us__text {
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+.detailed-request {
+  display: block;
+  background: #ebebeb;
+}
+
+.detailed-request__title {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 8rem 0 2.1rem;
+  text-align: center;
+}
+
+.detailed-request__subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+
+.detailed-request__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid #ffffff;
+}
+
+.detailed-request p, .detailed-request label {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.detailed-request select {
+  height: 4rem;
+  width: 24rem;
 }
 /*# sourceMappingURL=style.css.map */
