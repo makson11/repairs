@@ -98,7 +98,8 @@ h1, h2, h3, h4, h5, h6 {
 .main .subtitle {
   color: #ffffff;
   font-size: 3rem;
-  padding: 3rem 0;
+  font-weight: 400;
+  padding: 2.6rem 0;
   margin-bottom: 7.1rem;
 }
 
@@ -108,11 +109,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .main .services__icon {
   padding: 3.6rem;
-  max-height: 100%;
 }
 
 .main .services__text {
@@ -123,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main .services .icon {
-  padding-top: 2rem;
+  padding-bottom: 4.3rem;
 }
 
 .main .request {
@@ -142,8 +145,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
-  font-size: 1.8rem;
-  padding: 1.7rem 5.6rem;
+  font-size: 1.8em;
+  padding: .944em 3.11em;
   margin: 2rem;
 }
 
@@ -157,5 +160,41 @@ h1, h2, h3, h4, h5, h6 {
 
 .main .request .active {
   background-color: #d91233;
+}
+
+.about-us {
+  margin: 5rem 0 7rem;
+}
+
+.about-us__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-us__item {
+  text-align: center;
+  margin: 3.1rem;
+  max-width: 24.9rem;
+}
+
+.about-us__icon {
+  margin-bottom: 3rem;
+}
+
+.about-us__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about-us__text {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
