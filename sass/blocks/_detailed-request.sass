@@ -11,13 +11,26 @@
         font-weight: 400
         padding-bottom: 6rem
         text-align: center
-    &__form
+    &__form-wrap
         display: flex
         border: 5px solid #ffffff
-    p, label
-        font-size: 1.3rem
-        font-weight: 700
-    select
-        height: 4rem
-        width: 24rem
-
+        flex-wrap: wrap
+        padding: 4rem
+        justify-content: center
+        .row
+            flex-basis: 24rem
+            div
+                margin: 2rem
+        label
+            display: block
+            font-size: 1.3rem
+            margin-bottom: .8rem
+            font-weight: 700
+        select, textarea, input
+            font-size: 1.3rem
+            width: 24rem
+        select, input
+            height: 4rem
+        textarea
+            height: 11.8rem
+            resize: none

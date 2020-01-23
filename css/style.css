@@ -41,9 +41,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
-  font-size: 1.8em;
-  padding: .945em 3.111em;
-  margin: 2rem;
+  font-size: 1.8rem;
+  padding: 1.7rem 6.8rem;
 }
 
 .active {
@@ -154,12 +153,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 8.7rem;
 }
 
+.main .request__block {
+  margin: 2rem;
+}
+
 .main .request__text {
   color: #ffffff;
   font-size: 1.4rem;
   text-align: cetnter;
-  margin: 0 auto;
-  width: 160px;
+  margin: 2rem auto;
+  max-width: 16rem;
 }
 
 .about-us {
@@ -179,8 +182,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-us__item {
   text-align: center;
-  margin: 3.1rem;
-  max-width: 24.9rem;
+  margin: 3rem;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
 }
 
 .about-us__icon {
@@ -217,20 +221,46 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.detailed-request__form {
+.detailed-request__form-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 5px solid #ffffff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.detailed-request p, .detailed-request label {
+.detailed-request__form-wrap .row {
+  -ms-flex-preferred-size: 24rem;
+      flex-basis: 24rem;
+}
+
+.detailed-request__form-wrap .row div {
+  margin: 2rem;
+}
+
+.detailed-request__form-wrap label {
+  display: block;
   font-size: 1.3rem;
+  margin-bottom: .8rem;
   font-weight: 700;
 }
 
-.detailed-request select {
-  height: 4rem;
+.detailed-request__form-wrap select, .detailed-request__form-wrap textarea, .detailed-request__form-wrap input {
+  font-size: 1.3rem;
   width: 24rem;
+}
+
+.detailed-request__form-wrap select, .detailed-request__form-wrap input {
+  height: 4rem;
+}
+
+.detailed-request__form-wrap textarea {
+  height: 11.8rem;
+  resize: none;
 }
 /*# sourceMappingURL=style.css.map */
