@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-us {
-  margin: 5rem 0 7rem;
+  padding: 5rem 0 7rem;
 }
 
 .about-us__wrapper {
@@ -205,6 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 .detailed-request {
   display: block;
   background: #ebebeb;
+  padding-bottom: 8rem;
 }
 
 .detailed-request__title {
@@ -251,16 +252,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .detailed-request__form-wrap select, .detailed-request__form-wrap textarea, .detailed-request__form-wrap input {
+  padding: 1.4rem 1.7rem;
   font-size: 1.3rem;
   width: 24rem;
 }
 
-.detailed-request__form-wrap select, .detailed-request__form-wrap input {
-  height: 4rem;
+.detailed-request__form-wrap textarea {
+  height: 12.8rem;
+  resize: none;
 }
 
-.detailed-request__form-wrap textarea {
-  height: 11.8rem;
-  resize: none;
+.car-brands {
+  padding: 8rem 0 6rem;
+}
+
+.car-brands__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+.car-brands__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.car-brands__logo img {
+  -ms-flex-preferred-size: 14rem;
+      flex-basis: 14rem;
+  margin: 1rem;
+  opacity: .4;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.car-brands__logo img:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
