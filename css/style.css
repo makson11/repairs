@@ -296,4 +296,84 @@ h1, h2, h3, h4, h5, h6 {
 .car-brands__logo img:hover {
   opacity: 1;
 }
+
+.broadcast {
+  padding-bottom: 8rem;
+}
+
+.broadcast__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.broadcast__video {
+  border: 5px solid #f2f2f2;
+  padding: 2rem;
+}
+
+.broadcast__video video {
+  width: 100%;
+  max-height: 100%;
+}
+
+.reviews {
+  background-color: #ebebeb;
+  padding: 8rem 0 2.3rem;
+}
+
+.reviews__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.reviews__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 43.6rem;
+      flex-basis: 43.6rem;
+}
+
+.reviews__text {
+  padding-bottom: 5.5rem;
+}
+
+.reviews__avatar {
+  margin-right: 2.1rem;
+  width: 90px;
+  height: 90px;
+}
+
+.reviews__name {
+  color: #757575;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 1.2rem;
+}
+
+.reviews__subtitle {
+  color: #d91233;
+  padding-bottom: 1.4rem;
+  font-size: 1.6rem;
+}
+
+.reviews__coments {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
