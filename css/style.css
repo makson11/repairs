@@ -64,8 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 2rem;
-  margin-bottom: 9.4rem;
+  padding: 3rem 0;
 }
 
 .contacts__logo {
@@ -107,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4.8rem;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 6.4rem;
 }
 
 .main .subtitle {
@@ -334,9 +334,8 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -355,7 +354,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .reviews__avatar {
   margin-right: 2.1rem;
-  width: 90px;
   height: 90px;
 }
 
@@ -375,5 +373,129 @@ h1, h2, h3, h4, h5, h6 {
 .reviews__coments {
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+.consultation {
+  background-color: #dbdbdb;
+  padding: 8rem 0;
+}
+
+.consultation__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.1rem;
+}
+
+.consultation__subtitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.consultation__form {
+  border: 5px solid #ffffff;
+  padding: 4rem 4rem 4.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.consultation__form .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.consultation__form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.consultation__form-wrap div {
+  -ms-flex-preferred-size: 29rem;
+      flex-basis: 29rem;
+  margin: 2rem;
+}
+
+.consultation__form-wrap label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.consultation__form-wrap input {
+  font-size: 1.3rem;
+  width: 29rem;
+  height: 4.5rem;
+}
+
+.map {
+  position: relative;
+}
+
+.map__banner {
+  position: absolute;
+  background-color: #d91233;
+  padding: 6rem 10rem;
+  top: 5rem;
+  left: 70rem;
+  width: 48rem;
+  height: 29rem;
+  z-index: 99;
+}
+
+.map__banner .close {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  font-size: 4rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.map__contacts {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.map__address {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.map__tel {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.map__mail {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__tel {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
