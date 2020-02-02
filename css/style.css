@@ -439,6 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .map {
   position: relative;
+  overflow: hidden;
 }
 
 .map__banner {
@@ -446,9 +447,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d91233;
   padding: 6rem 10rem;
   top: 5rem;
-  left: 70rem;
+  left: 50%;
+  margin-left: -24rem;
   width: 48rem;
   height: 29rem;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
   z-index: 99;
 }
 
@@ -459,6 +465,40 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4rem;
   color: #ffffff;
   cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.map__banner .close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.map__hide-banner {
+  position: absolute;
+  background-color: #d91233;
+  left: 50%;
+  margin-left: -24rem;
+  width: 48rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  z-index: 99;
+}
+
+.map__hide-banner .arrow {
+  display: block;
+  color: #ffffff;
+  cursor: pointer;
+  padding-top: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .map__contacts {

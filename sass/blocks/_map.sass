@@ -1,13 +1,17 @@
 .map
     position: relative
+    overflow: hidden
     &__banner
         position: absolute
         background-color: $btn-color
         padding: 6rem 10rem
         top: 5rem
-        left: 70rem
+        left: 50%
+        margin-left: -24rem
         width: 48rem
         height: 29rem
+        transform: translateY(-150%)
+        transition: all .3s
         z-index: 99
         .close
             position: absolute
@@ -16,6 +20,29 @@
             font-size: 4rem
             color: #ffffff
             cursor: pointer
+            transition: all .5s
+            &:hover
+                transform: rotate(90deg)
+    &__hide-banner
+        position: absolute
+        background-color: $btn-color
+        left: 50%
+        margin-left: -24rem
+        width: 48rem
+        border-bottom-left-radius: 40px
+        border-bottom-right-radius: 40px
+        overflow: hidden
+        transform: translateY(0)
+        transition: all .3s
+        transition-delay: .2s
+        z-index: 99
+        .arrow
+            display: block
+            color: $white
+            cursor: pointer
+            padding-top: 3rem
+            font-size: 2.5rem
+            text-align: center 
     &__contacts
         font-size: 2.4rem
         font-weight: 700
